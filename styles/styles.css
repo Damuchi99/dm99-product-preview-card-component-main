@@ -39,7 +39,7 @@ body {
 }
 
 .producto-container .info-producto p{
-    color:grey
+    color:grey;
 }
 
 .producto-container .nombre-prod, .producto-container .precio-prod .precio-actual{
@@ -84,25 +84,34 @@ body {
     width: 125px;
 }
 
-@media (max-width:576px){
+@media (max-width: 700px){
     .producto-container {
         flex-direction: column;
         align-items: center;
-        width: auto;
-        height: auto;
+        width: auto!important;
+        height: auto!important;
+        margin: 0px 20px!important;
     }
 
     .producto-container .imagen-producto{
-        /*margin:10px auto;*/
-        /*border-radius:5px;*/
-        /*border: 1px solid #999;*/
-        /*padding:13px;*/
-        /*width: 100%;*/
-        height: 100vh;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-image: url("../images/image-product-mobile.jpg");
-        background-size: cover;
+        width: auto!important;
+    }
+
+    .producto-container .info-producto{
+        width: 100%!important;
+        padding: 15px;
+    }
+
+    .producto-container .imagen-producto img{
+        border-radius: 15px 15px 0px 0px!important;
+    }
+
+    .producto-container .nombre-prod, .producto-container .precio-prod .precio-actual{
+        font-size: 30px;
+    }
+
+    .producto-container .boton-anadir-al-carro{
+        margin-top: 20px;
     }
 }
 
