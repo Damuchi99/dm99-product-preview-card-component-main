@@ -20,24 +20,16 @@ body {
     background-color: white;
     border-radius: 15px;
     width: 700px;
-    height: 500px;
+    height: auto;
     margin: 20px;
 }
 
 .producto-container .imagen-producto{
-    /*margin:10px auto;*/
-    /*border-radius:5px;*/
-    /*border: 1px solid #999;*/
-    /*padding:13px;*/
-    /*width: 400px;
-    height: 500px;*/
-    /*background-size: 100% 100%;*/
-    background-repeat: no-repeat;
-    background-image: url("../images/image-product-desktop.jpg");
-    /*background-size: cover; */
+    padding: 0px;
 }
 
 .producto-container .imagen-producto img{
+    border-radius: 15px 0px 0px 15px;
     width: 100%;
 }
 
@@ -80,6 +72,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 35px;
 }
 
 .producto-container .boton-anadir-al-carro p{
